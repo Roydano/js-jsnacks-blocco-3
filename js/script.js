@@ -28,18 +28,45 @@ function between(array, min, max){
 
 
 
-
-
-
-
-
-
-
-
-
 // *Dare la possibilità di inserire due parole. Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.  Se hanno la stessa lunghezza, stamparle entrambe altrimenti stampare la più lunga delle due.
 
+var word1 = prompt('Inserisci una parola');
+var word2 = prompt('Inserisci una seconda parola');
+var moreLength = lengthWord(word1, word2);
+
+console.log(moreLength);
+
+
+
+ 
+
+
+
+
+function lengthWord(word1, word2){
+
+    var lengthWord = 'la parola più lunga è: ' + word1;
+
+    if(word1.length == word2.length){
+        lengthWord = 'Le due parole hanno la stessa lunghezza: ' + word1 + ' ' + word2;
+    } else if (word1.length < word2.length){
+        lengthWord = 'La parola più lunga è: ' + word2;
+    }
+
+    return lengthWord;
+}
+
+
+
+
 // *3.  Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro. Es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+
+
+
+
+
+
 
 // *4. Scrivi una funzione che prenda una stringa e la trasformi con l'iniziale maiuscola e tutto il resto in minuscolo.
 
