@@ -85,3 +85,11 @@ function concatenate(array1, array2){
 
 // *4. Scrivi una funzione che prenda una stringa e la trasformi con l'iniziale maiuscola e tutto il resto in minuscolo.
 
+var word = prompt('Inserisci una parola');
+var newWord = capitalize(word)
+
+console.log(newWord);
+
+function capitalize(str){
+     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
+}
