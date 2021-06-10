@@ -62,7 +62,22 @@ function lengthWord(word1, word2){
 // *3.  Scrivi una funzione che fonda due array (con lo stesso numero di elementi) prendendo alternativamente gli elementi da uno e dall’altro. Es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
 
+var array1 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l'];
+var array2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+var array3 = concatenate(array1, array2);
 
+console.log(array3);
+
+
+function concatenate(array1, array2){
+    var newArray = [];
+
+    for(var i = 0; i < array1.length; i++){
+        newArray.push(array1[i], array2[i]);
+    }
+
+    return newArray;
+}   
 
 
 
